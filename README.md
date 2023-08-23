@@ -1,0 +1,2 @@
+# Arcana
+ Tarot reading app
