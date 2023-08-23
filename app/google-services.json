@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815646524251",
+    "project_id": "arcana-259d6",
+    "storage_bucket": "arcana-259d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815646524251:android:951c7eecb58ae408f4d07e",
+        "android_client_info": {
+          "package_name": "com.leys.arcana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815646524251-9csd1ooo4cj5lv2ijirq4a1ls0c4pdlv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClGVP3XBPm_P_HpXIlo5DxrwwNqpmefUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815646524251-9csd1ooo4cj5lv2ijirq4a1ls0c4pdlv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
