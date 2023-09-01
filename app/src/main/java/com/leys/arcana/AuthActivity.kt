@@ -32,6 +32,12 @@ class AuthActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        binding.ForgotPassword.setOnClickListener {
+            val intent = Intent(this,ResetPasswordActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     fun LogIn(view : View){
@@ -50,10 +56,6 @@ class AuthActivity : AppCompatActivity() {
                 Toast.makeText(this,it.localizedMessage, Toast.LENGTH_LONG).show()
             }
         }
-    }
-
-    fun ForgotPassword(view : View){
-
     }
 
     fun SignUp(view : View){
