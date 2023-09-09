@@ -36,7 +36,6 @@ class AuthActivity : AppCompatActivity() {
         binding.ForgotPassword.setOnClickListener {
             val intent = Intent(this,ResetPasswordActivity::class.java)
             startActivity(intent)
-            finish()
         }
     }
 
