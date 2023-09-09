@@ -13,12 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="275dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textColorHint="#795548"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/PasswordText"
@@ -26,13 +27,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textColorHint="#795548"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EmailText" />
+        app:layout_constraintTop_toBottomOf="@+id/EmailText"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/LogIn"
@@ -40,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:onClick="LogIn"
-        android:text="Log In"
+        android:text="@string/log_in"
         android:backgroundTint="@color/buttonBrown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:onClick="SignUp"
-        android:text="Create New Account"
+        android:text="@string/create_new_account"
         android:backgroundTint="@color/buttonBrown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

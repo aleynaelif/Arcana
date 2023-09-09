@@ -4,78 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundBeige"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/SingleCardButton"
-        android:layout_width="150dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:onClick="SingleCardPull"
-        android:text="1 Card Spread "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/CelticCrossButton"
-        android:layout_width="150dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:onClick="CelticCrossPull"
-        android:text="Celtic Cross Spread"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SevenCardButton" />
-
-    <Button
-        android:id="@+id/HorseShoeButton"
-        android:layout_width="150dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:onClick="HorseShoePull"
-        android:text="Horseshoe Spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FiveCardButton" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/SevenCardButton"
-        android:layout_width="150dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:onClick="SevenCardPull"
-        android:text="7 Card Spread"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ThreeCardButton" />
-
-    <Button
-        android:id="@+id/FiveCardButton"
-        android:layout_width="150dp"
-        android:layout_height="99dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:onClick="FiveCardPull"
-        android:text="5 Card Spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SingleCardButton" />
-
-    <Button
-        android:id="@+id/ThreeCardButton"
-        android:layout_width="150dp"
-        android:layout_height="99dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:onClick="ThreeCardPull"
-        android:text="3 Card Spread"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

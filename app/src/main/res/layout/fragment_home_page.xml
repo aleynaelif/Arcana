@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePageFragment"
+    android:background="@color/backgroundBeige">
+
+    <Button
+        android:id="@+id/SingleCardButton"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/buttonBrown"
+        android:text="@string/_1_card_spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CelticCrossButton"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/buttonBrown"
+        android:text="@string/celt_c_cross_spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SevenCardButton" />
+
+    <Button
+        android:id="@+id/HorseShoeButton"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/buttonBrown"
+        android:text="@string/horseshoe_spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FiveCardButton" />
+
+    <Button
+        android:id="@+id/SevenCardButton"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/buttonBrown"
+        android:text="@string/_7_card_spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ThreeCardButton" />
+
+    <Button
+        android:id="@+id/FiveCardButton"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/buttonBrown"
+        android:text="@string/_5_card_spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingleCardButton" />
+
+    <Button
+        android:id="@+id/ThreeCardButton"
+        android:layout_width="150dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/buttonBrown"
+        android:text="@string/_3_card_spread"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
