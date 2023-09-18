@@ -1,8 +1,7 @@
 package com.leys.arcana
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import androidx.appcompat.app.AppCompatActivity
 import com.leys.arcana.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,15 +13,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        replaceFragment(HomePageFragment())
+        activityToFragment(HomePageFragment(),R.id.frameLayout, addToBackStack = true)
 
-    }
-    private fun replaceFragment(fragment : Fragment){
-
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.frameLayout,fragment)
-            .addToBackStack(null)
-            .commit()
     }
 
 }

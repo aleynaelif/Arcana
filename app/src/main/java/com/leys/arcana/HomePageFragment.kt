@@ -1,10 +1,11 @@
 package com.leys.arcana
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.leys.arcana.databinding.FragmentHomePageBinding
 
 
@@ -30,30 +31,24 @@ class HomePageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.SingleCardButton.setOnClickListener {
-            replaceFragment(OneCardFragment())
+            (activity as? AppCompatActivity)?.fragmentToFragment(OneCardFragment(),R.id.frameLayout, addToBackStack = true)
         }
         binding.ThreeCardButton.setOnClickListener {
-            replaceFragment(ThreeCardFragment())
+            (activity as? AppCompatActivity)?.fragmentToFragment(ThreeCardFragment(),R.id.frameLayout, addToBackStack = true)
         }
         binding.FiveCardButton.setOnClickListener {
-            replaceFragment(FiveCardFragment())
+            (activity as? AppCompatActivity)?.fragmentToFragment(FiveCardFragment(),R.id.frameLayout, addToBackStack = true)
         }
         binding.SevenCardButton.setOnClickListener {
-            replaceFragment(SevenCardFragment())
+            (activity as? AppCompatActivity)?.fragmentToFragment(SevenCardFragment(),R.id.frameLayout, addToBackStack = true)
         }
         binding.HorseShoeButton.setOnClickListener {
-            replaceFragment(HorseShoeFragment())
+            (activity as? AppCompatActivity)?.fragmentToFragment(HorseShoeFragment(),R.id.frameLayout, addToBackStack = true)
         }
         binding.CelticCrossButton.setOnClickListener {
-            replaceFragment(CelticCrossFragment())
+            (activity as? AppCompatActivity)?.fragmentToFragment(CelticCrossFragment(),R.id.frameLayout, addToBackStack = true)
         }
     }
 
-
-    private fun replaceFragment(fragment : Fragment){
-        val transaction = activity?.supportFragmentManager?.beginTransaction()
-        transaction?.replace(R.id.frameLayout, fragment)?.addToBackStack(null)?.commit()
-
-    }
 
 }
