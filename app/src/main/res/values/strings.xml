@@ -12,6 +12,10 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="create_new_account">Create New Account</string>
     <string name="reset_password">Reset Password</string>
+    <string name="pick_a_card_text">Click the Button to Pick a Card</string>
+    <string name="lucky">I\'m Feeling Lucky!</string>
+    <string name="send_tarot">Get Your Readıng!</string>
+    <string name="instruction_to_send_tarot_text">Click the Button to Get Your Tarot Reading</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

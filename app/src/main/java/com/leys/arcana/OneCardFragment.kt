@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.core.content.ContextCompat
+import com.leys.arcana.databinding.FragmentOneCardBinding
 
 
 class OneCardFragment : Fragment() {
+
+    private var _binding: FragmentOneCardBinding? = null
+    private val binding get() = _binding!!
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +23,26 @@ class OneCardFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_one_card, container, false)
+        _binding = FragmentOneCardBinding.inflate(inflater, container,false)
+        return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.PickACardButton.setOnClickListener {
+            //imageView change
+            binding.CardImage.setImageResource(R.drawable.lovegoth)
+            // instruction text change
+            if(binding.HowToText.text.equals(getString(R.string.pick_a_card_text))){
+                binding.HowToText.text = getString(R.string.instruction_to_send_tarot_text)
+            }
+            //button text and color change
+            if (binding.PickACardButton.text == getString(R.string.lucky)){
+                binding.PickACardButton.text = getString(R.string.send_tarot)
+                binding.PickACardButton.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.Beige))
+            }
+        }
+    }
 
 }
