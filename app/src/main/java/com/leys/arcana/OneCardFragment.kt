@@ -38,7 +38,7 @@ class OneCardFragment : Fragment() {
                 binding.HowToText.text = getString(R.string.instruction_to_send_tarot_text)
             }
             //button text and color change
-            if (binding.PickACardButton.text == getString(R.string.lucky)){
+            if (binding.PickACardButton.text.equals(getString(R.string.lucky))) {
                 binding.PickACardButton.text = getString(R.string.send_tarot)
                 binding.PickACardButton.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.Beige))
             }
