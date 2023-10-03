@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.leys.arcana.databinding.FragmentOneCardBinding
 
@@ -40,9 +41,15 @@ class OneCardFragment : Fragment() {
             //button text and color change
             if (binding.PickACardButton.text.equals(getString(R.string.lucky))) {
                 binding.PickACardButton.text = getString(R.string.send_tarot)
+                binding.PickACardButton.setTextColor(ContextCompat.getColor(requireActivity(), R.color.buttonBrown))
                 binding.PickACardButton.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.Beige))
             }
+            binding.PickACardButton.setOnClickListener {
+                (activity as? AppCompatActivity)?.fragmentToFragment(ThemeOfTarotFragment(),R.id.frameLayout, addToBackStack = true)
+            }
         }
+
+
     }
 
 }
