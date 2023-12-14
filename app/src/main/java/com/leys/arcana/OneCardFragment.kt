@@ -32,11 +32,10 @@ class OneCardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.PickACardButton.setOnClickListener {
-            //imageView change
-            binding.CardImage.setImageResource(R.drawable.lovegoth)
             // instruction text change
             if(binding.HowToText.text.equals(getString(R.string.pick_a_card_text))){
-                binding.HowToText.text = getString(R.string.instruction_to_send_tarot_text)
+                //shuffle function should be in here
+                binding.HowToText.text = getString(R.string.card_selected_text)
             }
             //button text and color change
             if (binding.PickACardButton.text.equals(getString(R.string.lucky))) {
@@ -45,7 +44,7 @@ class OneCardFragment : Fragment() {
                 binding.PickACardButton.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.Beige))
             }
             binding.PickACardButton.setOnClickListener {
-                (activity as? AppCompatActivity)?.fragmentToFragment(ThemeOfTarotFragment(),R.id.frameLayout, addToBackStack = true)
+                //meanings page should open up in here
             }
         }
 

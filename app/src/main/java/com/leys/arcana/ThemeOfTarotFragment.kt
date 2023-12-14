@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.leys.arcana.databinding.FragmentThemeOfTarotBinding
 
-
+//ON HOLD FOR NOW
 class ThemeOfTarotFragment : Fragment() {
 
     private var _binding: FragmentThemeOfTarotBinding? = null

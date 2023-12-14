@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        activityToFragment(HomePageFragment(),R.id.frameLayout, addToBackStack = true)
 
     }
 
