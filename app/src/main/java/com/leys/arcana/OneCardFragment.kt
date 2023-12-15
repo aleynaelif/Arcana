@@ -5,8 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
+import androidx.navigation.Navigation
 import com.leys.arcana.databinding.FragmentOneCardBinding
 
 
@@ -15,7 +14,7 @@ class OneCardFragment : Fragment() {
     private var _binding: FragmentOneCardBinding? = null
     private val binding get() = _binding!!
 
-    private var cardNumber = 0
+   // private var cardNumber = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,25 +34,13 @@ class OneCardFragment : Fragment() {
 
         //get the card number from the arguments in HomePageFragment
 
-        arguments?.let {
+        /*arguments?.let {
             cardNumber = OneCardFragmentArgs.fromBundle(it).cardNumber
         }
-
+*/
         binding.PickACardButton.setOnClickListener {
-            // instruction text change
-            if(binding.HowToText.text.equals(getString(R.string.pick_a_card_text))){
-                //shuffle function should be in here
-                binding.HowToText.text = getString(R.string.card_selected_text)
-            }
-            //button text and color change
-            if (binding.PickACardButton.text.equals(getString(R.string.lucky))) {
-                binding.PickACardButton.text = getString(R.string.send_tarot)
-                binding.PickACardButton.setTextColor(ContextCompat.getColor(requireActivity(), R.color.buttonBrown))
-                binding.PickACardButton.setBackgroundColor(ContextCompat.getColor(requireActivity(), R.color.Beige))
-            }
-            binding.PickACardButton.setOnClickListener {
-                //meanings page should open up in here
-            }
+            val action = OneCardFragmentDirections.actionOneCardFragmentToThemeOfTarotFragment(Constants.ONE_INT)
+            Navigation.findNavController(it).navigate(action)
         }
 
 

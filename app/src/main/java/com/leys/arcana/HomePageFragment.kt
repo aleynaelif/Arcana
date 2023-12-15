@@ -4,10 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import com.leys.arcana.databinding.FragmentHomePageBinding
 
 
@@ -34,27 +32,27 @@ class HomePageFragment : Fragment() {
 
 
         binding.SingleCardButton.setOnClickListener {
-            val actionOne = HomePageFragmentDirections.actionHomePageFragmentToOneCardFragment(Constants.ONE_INT)
+            val actionOne = HomePageFragmentDirections.actionHomePageFragmentToOneCardFragment()
             Navigation.findNavController(it).navigate(actionOne)
         }
         binding.ThreeCardButton.setOnClickListener {
-            val actionThree = HomePageFragmentDirections.actionHomePageFragmentToThreeCardFragment(Constants.THREE_INT)
+            val actionThree = HomePageFragmentDirections.actionHomePageFragmentToThreeCardFragment()
             Navigation.findNavController(it).navigate(actionThree)
         }
         binding.FiveCardButton.setOnClickListener {
-            val actionFive = HomePageFragmentDirections.actionHomePageFragmentToFiveCardFragment(Constants.FIVE_INT)
+            val actionFive = HomePageFragmentDirections.actionHomePageFragmentToFiveCardFragment()
             Navigation.findNavController(it).navigate(actionFive)
         }
         binding.SevenCardButton.setOnClickListener {
-            val actionSeven = HomePageFragmentDirections.actionHomePageFragmentToSevenCardFragment(Constants.SEVEN_INT)
+            val actionSeven = HomePageFragmentDirections.actionHomePageFragmentToSevenCardFragment()
             Navigation.findNavController(it).navigate(actionSeven)
         }
         binding.HorseShoeButton.setOnClickListener {
-            val actionHorse = HomePageFragmentDirections.actionHomePageFragmentToHorseShoeFragment(Constants.SEVEN_INT)
+            val actionHorse = HomePageFragmentDirections.actionHomePageFragmentToHorseShoeFragment()
             Navigation.findNavController(it).navigate(actionHorse)
         }
         binding.CelticCrossButton.setOnClickListener {
-            val actionCeltic = HomePageFragmentDirections.actionHomePageFragmentToCelticCrossFragment(Constants.TEN_INT)
+            val actionCeltic = HomePageFragmentDirections.actionHomePageFragmentToCelticCrossFragment()
             Navigation.findNavController(it).navigate(actionCeltic)
         }
     }
