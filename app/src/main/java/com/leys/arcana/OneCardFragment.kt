@@ -15,6 +15,8 @@ class OneCardFragment : Fragment() {
     private var _binding: FragmentOneCardBinding? = null
     private val binding get() = _binding!!
 
+    private var cardNumber = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,12 @@ class OneCardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //get the card number from the arguments in HomePageFragment
+
+        arguments?.let {
+            cardNumber = OneCardFragmentArgs.fromBundle(it).cardNumber
+        }
 
         binding.PickACardButton.setOnClickListener {
             // instruction text change

@@ -34,23 +34,28 @@ class HomePageFragment : Fragment() {
 
 
         binding.SingleCardButton.setOnClickListener {
-
-            //Navigation.findNavController(it).navigate(R.id.SingleCardButton)
+            val actionOne = HomePageFragmentDirections.actionHomePageFragmentToOneCardFragment(Constants.ONE_INT)
+            Navigation.findNavController(it).navigate(actionOne)
         }
         binding.ThreeCardButton.setOnClickListener {
-
+            val actionThree = HomePageFragmentDirections.actionHomePageFragmentToThreeCardFragment(Constants.THREE_INT)
+            Navigation.findNavController(it).navigate(actionThree)
         }
         binding.FiveCardButton.setOnClickListener {
-
+            val actionFive = HomePageFragmentDirections.actionHomePageFragmentToFiveCardFragment(Constants.FIVE_INT)
+            Navigation.findNavController(it).navigate(actionFive)
         }
         binding.SevenCardButton.setOnClickListener {
-
+            val actionSeven = HomePageFragmentDirections.actionHomePageFragmentToSevenCardFragment(Constants.SEVEN_INT)
+            Navigation.findNavController(it).navigate(actionSeven)
         }
         binding.HorseShoeButton.setOnClickListener {
-
+            val actionHorse = HomePageFragmentDirections.actionHomePageFragmentToHorseShoeFragment(Constants.SEVEN_INT)
+            Navigation.findNavController(it).navigate(actionHorse)
         }
         binding.CelticCrossButton.setOnClickListener {
-
+            val actionCeltic = HomePageFragmentDirections.actionHomePageFragmentToCelticCrossFragment(Constants.TEN_INT)
+            Navigation.findNavController(it).navigate(actionCeltic)
         }
     }
 

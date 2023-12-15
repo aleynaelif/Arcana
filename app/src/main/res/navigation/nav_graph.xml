@@ -9,22 +9,38 @@
         android:id="@+id/threeCardFragment"
         android:name="com.leys.arcana.ThreeCardFragment"
         android:label="fragment_three_card"
-        tools:layout="@layout/fragment_three_card" />
+        tools:layout="@layout/fragment_three_card" >
+        <argument
+            android:name="cardNumber"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/sevenCardFragment"
         android:name="com.leys.arcana.SevenCardFragment"
         android:label="fragment_seven_card"
-        tools:layout="@layout/fragment_seven_card" />
+        tools:layout="@layout/fragment_seven_card" >
+        <argument
+            android:name="cardNumber"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/celticCrossFragment"
         android:name="com.leys.arcana.CelticCrossFragment"
         android:label="fragment_celtic_cross"
-        tools:layout="@layout/fragment_celtic_cross" />
+        tools:layout="@layout/fragment_celtic_cross" >
+        <argument
+            android:name="cardNumber"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/fiveCardFragment"
         android:name="com.leys.arcana.FiveCardFragment"
         android:label="fragment_five_card"
-        tools:layout="@layout/fragment_five_card" />
+        tools:layout="@layout/fragment_five_card" >
+        <argument
+            android:name="cardNumber"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/homePageFragment"
         android:name="com.leys.arcana.HomePageFragment"
@@ -48,19 +64,23 @@
         <action
             android:id="@+id/action_homePageFragment_to_horseShoeFragment"
             app:destination="@id/horseShoeFragment" />
-        <argument
-            android:name="cardNumber"
-            app:argType="integer"
-            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/horseShoeFragment"
         android:name="com.leys.arcana.HorseShoeFragment"
         android:label="fragment_horse_shoe"
-        tools:layout="@layout/fragment_horse_shoe" />
+        tools:layout="@layout/fragment_horse_shoe" >
+        <argument
+            android:name="cardNumber"
+            app:argType="integer" />
+    </fragment>
     <fragment
         android:id="@+id/oneCardFragment"
         android:name="com.leys.arcana.OneCardFragment"
         android:label="fragment_one_card"
-        tools:layout="@layout/fragment_one_card" />
+        tools:layout="@layout/fragment_one_card" >
+        <argument
+            android:name="cardNumber"
+            app:argType="integer" />
+    </fragment>
 </navigation>
