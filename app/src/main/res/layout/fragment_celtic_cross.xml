@@ -12,15 +12,127 @@
         android:background="@color/backgroundBeige"
         tools:context=".CelticCrossFragment">
 
-
-        <TextView
-            android:id="@+id/textView5"
+        <Button
+            android:id="@+id/pickACardButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="144dp"
-            android:layout_marginTop="234dp"
-            android:text="10"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="@color/buttonBrown"
+            android:text="@string/lucky"
+            android:textColor="@color/Beige"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/howToText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/pick_a_card_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/pickACardButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cardImage5"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/lovegoth" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <ImageView
+                        android:id="@+id/cardImage4"
+                        android:layout_width="50dp"
+                        android:layout_height="75dp"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/lovegoth" />
+
+                    <ImageView
+                        android:id="@+id/cardImage1"
+                        android:layout_width="50dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/lovegoth" />
+
+                    <ImageView
+                        android:id="@+id/cardImage2"
+                        android:layout_width="50dp"
+                        android:layout_height="75dp"
+                        android:rotation="270"
+                        android:src="@drawable/lovegoth" />
+
+                    <ImageView
+                        android:id="@+id/cardImage6"
+                        android:layout_width="50dp"
+                        android:layout_height="75dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/lovegoth" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/cardImage3"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/lovegoth" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cardImage10"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/lovegoth" />
+
+                <ImageView
+                    android:id="@+id/cardImage9"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/lovegoth" />
+
+                <ImageView
+                    android:id="@+id/cardImage8"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/lovegoth" />
+
+                <ImageView
+                    android:id="@+id/cardImage7"
+                    android:layout_width="50dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/lovegoth" />
+            </LinearLayout>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

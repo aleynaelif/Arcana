@@ -12,12 +12,6 @@ class Utilities {
                 button.text = (R.string.card_selected_text).toString()
             }
         }
-        fun changeTheIconIfClicked(button: Button, context: Context){
-            if (button.text.equals((R.string.lucky).toString())) {
-                button.text = (R.string.send_tarot).toString()
-                //button.setTextColor(ContextCompat.getColor(context, R.color.buttonBrown))
-                //button.setBackgroundColor(ContextCompat.getColor(context, R.color.Beige))
-            }
-        }
+
     }
 }

@@ -13,15 +13,120 @@
         android:background="@color/backgroundBeige"
         tools:context=".HorseShoeFragment">
 
+        <ImageView
+            android:id="@+id/cardImage4"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/cardImage3"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toStartOf="@+id/cardImage4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/cardImage2"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toStartOf="@+id/cardImage3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/cardImage7"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/cardImage6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/cardImage6"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/cardImage5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/cardImage5"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/cardImage4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/cardImage1"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/lovegoth"
+            app:layout_constraintBottom_toTopOf="@+id/howToText"
+            app:layout_constraintEnd_toStartOf="@+id/cardImage2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/howToText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="151dp"
-            android:layout_marginTop="305dp"
-            android:text="horse"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginBottom="50dp"
+            android:text="@string/pick_a_card_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/pickACardButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/pickACardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="@color/buttonBrown"
+            android:text="@string/lucky"
+            android:textColor="@color/Beige"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
