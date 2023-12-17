@@ -5,114 +5,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
-<androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ThemeOfTarotFragment"
-    android:background="@color/backgroundBeige">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundBeige"
+        tools:context=".ThemeOfTarotFragment">
 
 
-    <ImageView
-        android:id="@+id/GeneralImageView"
-        android:layout_width="111dp"
-        android:layout_height="189dp"
-        android:layout_marginStart="20dp"
-        android:onClick="GeneralTheme"
-        android:src="@drawable/general"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/GeneralThemeText" />
+        <TextView
+            android:id="@+id/TopicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/select_a_theme"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <ImageView
-        android:id="@+id/LoveImageView"
-        android:layout_width="123dp"
-        android:layout_height="190dp"
-        android:onClick="LoveTheme"
-        android:src="@drawable/lovet"
-        app:layout_constraintEnd_toStartOf="@+id/CareerImageView"
-        app:layout_constraintStart_toEndOf="@+id/GeneralImageView"
-        app:layout_constraintTop_toBottomOf="@+id/LoveThemeText" />
+        <Button
+            android:id="@+id/GetUrReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:backgroundTint="@color/buttonBrown"
+            android:text="@string/get_reading"
+            android:textColor="@color/Beige"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/CareerImageView"
-        android:layout_width="116dp"
-        android:layout_height="192dp"
-        android:layout_marginEnd="20dp"
-        android:onClick="CareerTheme"
-        android:src="@drawable/job"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CareerThemeText" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="143dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/fortuneteller"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/TopicText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/select_a_theme"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="20sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/GetUrReading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintVertical_bias="0.0">
 
-    <TextView
-        android:id="@+id/GeneralThemeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/general_theme"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopicText" />
+            <ImageView
+                android:id="@+id/GeneralImageView"
+                android:layout_width="111dp"
+                android:layout_height="189dp"
+                android:onClick="GeneralTheme"
+                android:src="@drawable/general" />
 
-    <TextView
-        android:id="@+id/LoveThemeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/love_theme"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toStartOf="@+id/CareerThemeText"
-        app:layout_constraintStart_toEndOf="@+id/GeneralThemeText"
-        app:layout_constraintTop_toBottomOf="@+id/TopicText" />
+            <ImageView
+                android:id="@+id/LoveImageView"
+                android:layout_width="123dp"
+                android:layout_height="190dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:onClick="LoveTheme"
+                android:src="@drawable/lovet" />
 
-    <TextView
-        android:id="@+id/CareerThemeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="50dp"
-        android:text="@string/Career_theme"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TopicText" />
+            <ImageView
+                android:id="@+id/CareerImageView"
+                android:layout_width="116dp"
+                android:layout_height="192dp"
+                android:onClick="CareerTheme"
+                android:src="@drawable/job" />
+        </LinearLayout>
 
-    <Button
-        android:id="@+id/GetUrReading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/buttonBrown"
-        android:text="@string/get_reading"
-        android:textColor= "@color/Beige"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoveImageView" />
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TopicText">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="143dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/fortuneteller"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/GeneralThemeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_theme"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textSize="20sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/LoveThemeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="75dp"
+                android:text="@string/love_theme"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/CareerThemeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Career_theme"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
