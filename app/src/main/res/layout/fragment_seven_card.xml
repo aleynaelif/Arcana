@@ -16,7 +16,7 @@
             android:id="@+id/pickACardButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="150dp"
+            android:layout_marginBottom="156dp"
             android:backgroundTint="@color/buttonBrown"
             android:text="@string/lucky"
             android:textColor="@color/Beige"
@@ -29,7 +29,7 @@
             android:id="@+id/howToText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="48dp"
             android:text="@string/pick_a_card_text"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#000000"
@@ -56,31 +56,31 @@
                 <ImageView
                     android:id="@+id/cardImage4"
                     android:layout_width="75dp"
-                    android:layout_height="125dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/lovegoth" />
 
                 <ImageView
                     android:id="@+id/cardImage3"
                     android:layout_width="75dp"
-                    android:layout_height="125dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="28dp"
                     android:src="@drawable/lovegoth" />
 
                 <ImageView
                     android:id="@+id/cardImage2"
                     android:layout_width="75dp"
-                    android:layout_height="125dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/lovegoth" />
             </LinearLayout>
 
             <ImageView
                 android:id="@+id/cardImage1"
                 android:layout_width="75dp"
-                android:layout_height="125dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
                 android:src="@drawable/lovegoth" />
 
             <LinearLayout
@@ -92,21 +92,21 @@
                 <ImageView
                     android:id="@+id/cardImage7"
                     android:layout_width="75dp"
-                    android:layout_height="125dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/lovegoth" />
 
                 <ImageView
                     android:id="@+id/cardImage6"
                     android:layout_width="75dp"
-                    android:layout_height="125dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginBottom="28dp"
                     android:src="@drawable/lovegoth" />
 
                 <ImageView
                     android:id="@+id/cardImage5"
                     android:layout_width="75dp"
-                    android:layout_height="125dp"
+                    android:layout_height="100dp"
                     android:src="@drawable/lovegoth" />
             </LinearLayout>
         </LinearLayout>
