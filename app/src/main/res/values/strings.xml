@@ -8,6 +8,14 @@
     <string name="celt_c_cross_spread">Celtıc Cross Spread</string>
     <string name="_3_card_spread">3 Card Spread</string>
     <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="Surname">Surname</string>
+    <string name="DateOfBirth">Date of Birth</string>
+    <string name="Save">Save</string>
+    <string name="Home">Home</string>
+    <string name="History">History</string>
+    <string name="Profile">Profile</string>
+    <string name="Settings">Settings</string>
     <string name="log_in">Log In</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot Password?</string>
