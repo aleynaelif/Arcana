@@ -9,7 +9,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.leys.arcana.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+    
     private lateinit var binding : ActivityMainBinding
     private lateinit var navController: NavController
 
