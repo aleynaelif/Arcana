@@ -32,4 +32,13 @@
     <string name="Career_theme">Career</string>
     <string name="get_reading">Get Your Reading!</string>
     <string name="forgot_password_info">We will magically send you a mail to reset your password!</string>
+    <string name="gender">Gender</string>
+
+    <string-array name="gender_options">,
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Prefer Not To Say</item>
+    </string-array>
+
 </resources>

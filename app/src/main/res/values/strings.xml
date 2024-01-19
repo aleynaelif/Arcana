@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Arcana</string>
     <string name="welcome">Arcana\'ya Hoşgeldin!</string>
-    <string name="_1_card_spread">1 Kart Açılımı</string>
-    <string name="_7_card_spread">7 Kart Açılımı</string>
-    <string name="_5_card_spread">5 Kart Açılımı</string>
+    <string name="_1_card_spread">Bir Kart Açılımı</string>
+    <string name="_7_card_spread">Yedi Kart Açılımı</string>
+    <string name="_5_card_spread">Beş Kart Açılımı</string>
     <string name="horseshoe_spread">At Nalı Açılımı</string>
     <string name="celt_c_cross_spread">Celtıc Cross Açılımı</string>
-    <string name="_3_card_spread">3 Card Açılımı</string>
-    <string name="email">Email</string>
-    <string name="name">İsim</string>
-    <string name="Surname">Soyisim</string>
+    <string name="_3_card_spread">Üç Kart Açılımı</string>
+    <string name="email">E-mail</string>
+    <string name="name">Ad</string>
+    <string name="Surname">Soyad</string>
     <string name="DateOfBirth">Doğum Tarihi</string>
     <string name="Save">Kaydet</string>
     <string name="Home">Anasayfa</string>
@@ -25,11 +25,19 @@
     <string name="lucky">Şanslı Hissediyorum!</string>
     <string name="send_tarot">Falı Yorumla</string>
     <string name="card_selected_text">Kartın Seçildi!</string>
-    <string name="select_a_theme">Fal Konusunu Seç</string>
+    <string name="select_a_theme">Fal Konusu Seç</string>
     <string name="general_theme">Genel</string>
     <string name="love_theme">Aşk</string>
     <string name="Career_theme">Kariyer</string>
     <string name="get_reading">Falını Yorumlat!</string>
     <string name="forgot_password_info">Şifrenin sıfırlanması için sana sihirli bir mail göndereceğiz!</string>
+    <string name="gender">Cinsiyet</string>
+
+    <string-array name="gender_options">
+        <item>Seçiniz</item>
+        <item>Kadın</item>
+        <item>Erkek</item>
+        <item>Belirtmek İstemiyorum</item>
+    </string-array>
 
 </resources>
