@@ -7,8 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
     <color name="backgroundBeige">#CACEE6</color>
     <color name="buttonBrown">#788eec</color>
     <color name="Beige">#fff2e2</color>
     <color name="TextColor">#475C6E</color>
+
+    <color name="Brown5">#63583c</color>
+    <color name="Brown4">#7e7258</color>
+    <color name="Brown3">#998d75</color>
+    <color name="Brown2">#b6aa94</color>
+    <color name="Brown1">#d3c6b3</color>
 </resources>
