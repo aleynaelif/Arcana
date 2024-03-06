@@ -5,16 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.platform.ComposeView
+import androidx.fragment.app.viewModels
 import androidx.navigation.Navigation
-import com.leys.arcana.databinding.FragmentOneCardBinding
+
 
 
 class OneCardFragment : Fragment() {
 
-    private var _binding: FragmentOneCardBinding? = null
-    private val binding get() = _binding!!
-
-   // private var cardNumber = 0
+    private lateinit var composeView: ComposeView
+    private val viewModel: OneCardViewModel by viewModels()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,9 +26,10 @@ class OneCardFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentOneCardBinding.inflate(inflater, container,false)
-        return binding.root
+    ): View {
+        return ComposeView(requireContext()).also {
+            composeView = it
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -37,13 +40,17 @@ class OneCardFragment : Fragment() {
         /*arguments?.let {
             cardNumber = OneCardFragmentArgs.fromBundle(it).cardNumber
         }
-*/
-        binding.PickACardButton.setOnClickListener {
-            val action = OneCardFragmentDirections.actionOneCardFragmentToThemeOfTarotFragment(Constants.ONE_INT)
-            Navigation.findNavController(it).navigate(action)
+        */
+        composeView.setContent {
+            val state by viewModel.state.collectAsState()
+            OneCardScreen(
+                state = state,
+                onNextClick = {
+                    val action = OneCardFragmentDirections.actionOneCardFragmentToThemeOfTarotFragment(Constants.ONE_INT)
+                    Navigation.findNavController(view).navigate(action)
+                }
+            )
+
         }
-
-
     }
-
 }

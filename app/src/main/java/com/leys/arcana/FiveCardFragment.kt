@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation
 import com.leys.arcana.databinding.FragmentFiveCardBinding
-import com.leys.arcana.databinding.FragmentOneCardBinding
 
 
  class FiveCardFragment : Fragment() {

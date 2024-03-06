@@ -78,8 +78,7 @@
     <fragment
         android:id="@+id/oneCardFragment"
         android:name="com.leys.arcana.OneCardFragment"
-        android:label="fragment_one_card"
-        tools:layout="@layout/fragment_one_card" >
+        android:label="fragment_one_card">
         <action
             android:id="@+id/action_oneCardFragment_to_themeOfTarotFragment"
             app:destination="@id/themeOfTarotFragment" />
